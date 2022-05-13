@@ -1,3 +1,5 @@
+package tdd.Chapter3;
+
 import java.util.Scanner;
 
 public class Zuba {
