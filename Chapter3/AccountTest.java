@@ -1,21 +1,24 @@
 package Chapter3;
 
+import Chapter3.Account;
+
 import java.util.Scanner;
 
 public class AccountTest {
+
     public static void main(String[] args) {
+        Account myAccount = new Account();
+        Scanner userInput = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
-
-        Account myAccount = new Account("Jane Green", 50.00);
-
-        System.out.printf("Initial name is: %s%n%n", myAccount.getName());
+        System.out.printf("Initial name is: %s%n%n%n", myAccount.getName());
 
         System.out.println("Please enter the name: ");
-        String theName = input.nextLine();
+
+        String theName = userInput.nextLine();
         myAccount.setName(theName);
         System.out.println();
 
-        System.out.printf("Name in object myAccount is:%n%s%n",myAccount.getName());
+        System.out.printf("Name in object myAccount is: %n%s%n",
+        myAccount.getName());
     }
 }

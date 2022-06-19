@@ -9,14 +9,15 @@ public class BMI {
 
         System.out.println("Enter weight: ");
         int weightInPounds = input.nextInt();
+
         System.out.println("Enter height: ");
         double heightInInches = input.nextInt();
 
-        double weight =  weightInPounds*703/heightInInches*heightInInches;
-        double height = weightInPounds*703/heightInInches*heightInInches;
+        double weight = weightInPounds  * 703 / heightInInches * heightInInches;
+        double height = weightInPounds * 703 / heightInInches * heightInInches;
 
-        System.out.println("Weight in Pounds: "+weightInPounds);
-        System.out.println("Height in meters: "+heightInInches);
+        System.out.println("Weight in Pounds: " + weightInPounds);
+        System.out.println("Height in meters: " + heightInInches);
 
     }
 }

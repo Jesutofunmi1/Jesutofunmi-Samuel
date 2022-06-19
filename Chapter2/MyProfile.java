@@ -15,6 +15,8 @@ public class MyProfile {
 
         System.out.println("Enter your date of birth: ");
         int dob = input.nextInt();
+
+        System.out.printf("My profile is: %s%n  %d%n  %d%n" , name, age, dob);
     }
 
 }

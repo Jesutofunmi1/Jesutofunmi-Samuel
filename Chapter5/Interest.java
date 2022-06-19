@@ -6,6 +6,8 @@ public class Interest {
         double principal = 1000.0;
         double rate = 0.05;
 
+// formula is a: = p(1 + r) raise to n
+
         System.out.printf("%s%20s%n", "Year", "Amount on deposit");
         for (int year = 1; year <=10; ++year) {
             double amount = principal* Math.pow(1.0 + rate,year);

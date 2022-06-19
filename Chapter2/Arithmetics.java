@@ -21,7 +21,7 @@ public class Arithmetics {
         System.out.printf("Sum is %d%n ", sum);
 
         int average = sum / 2;
-        System.out.printf(" Average is %d%n", average);
+        System.out.printf("Average is %d%n", average);
 
         int product = sum * 2;
         System.out.printf("Product of sum is %d%n", product);

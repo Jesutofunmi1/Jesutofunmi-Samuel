@@ -86,4 +86,4 @@ public class Fun {
     public String getDateOfBirth() {
         return day + "/" + month +"/" + year;
     }
-}
+    }

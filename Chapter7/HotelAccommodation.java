@@ -67,7 +67,7 @@ public class HotelAccommodation {
         }
     }
 
-    private static void initialise( String hotelRef[] )
+    private static void initialise(String[] hotelRef)
     {
         for (int x = 1; x < 11; x++ )
             hotelRef[x] = "empty";
@@ -75,7 +75,7 @@ public class HotelAccommodation {
     }
 
 
-    public static void view(String hotel[], String Customer){
+    public static void view(String[] hotel, String Customer){
 
         for (int x =1; x <11; x++)
         {
