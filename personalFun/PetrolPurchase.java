@@ -66,4 +66,7 @@ public class PetrolPurchase {
     public double getPurchaseAmount(){
         return (quantity * price) - discount;
     }
+
+
+
 }

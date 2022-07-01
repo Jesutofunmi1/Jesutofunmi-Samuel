@@ -18,6 +18,5 @@ public class BMI {
 
         System.out.println("Weight in Pounds: " + weightInPounds);
         System.out.println("Height in meters: " + heightInInches);
-
     }
 }

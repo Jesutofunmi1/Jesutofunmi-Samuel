@@ -9,7 +9,7 @@ public class DoWhileTest {
             System.out.printf("%d  ", counter);
         ++counter;
 
-        } while (counter <= 10);
+        } while (counter <= 100);
 
         System.out.println();
     }

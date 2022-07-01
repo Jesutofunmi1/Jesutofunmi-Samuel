@@ -15,8 +15,8 @@ public class LetterGrades {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.printf("%s%n%s%n  %s%n  %s%n", "Enter the integer grades in the range 0-100",
-        "Enter the integer grades in the range 0-100.",
+        System.out.printf("%s%n%s%n  %s%n  %s%n",
+                "Enter the integer grades in the range 0-100.",
                 "Type the end-of-file indicator to terminate input:",
                 "On UNIX/Linux/macOS type <Ctrl> d then press Enter",
                 "On Windows type <Ctrl> z then press Enter");
@@ -51,7 +51,19 @@ public class LetterGrades {
         if (gradeCounter != 0) {
 
             double average = (double) total/gradeCounter;
+            System.out.printf("Total of the %d grades entered is %d%n",gradeCounter, total);
+            System.out.printf("Class average is %.2f%n", average);
+            System.out.printf("Class average is %.2f%n", average);
+            System.out.printf("%n%s%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n",
+                    "Number of student who received each grade:",
+                    "A:",aCount,
+                    "B:", bCount,
+                    "C:", cCount,
+                    "D:", dCount,
+                    "F:", fCount);
+        }
+        else {
+            System.out.println("No grades were entered");
         }
     }
-
 }
