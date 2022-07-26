@@ -25,6 +25,7 @@ public class LetterGrades {
             total+= grade;
             ++gradeCounter;
 
+
             switch (grade/10) {
 
                 case 9:

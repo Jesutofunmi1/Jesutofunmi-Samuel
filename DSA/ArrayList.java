@@ -1,55 +1,54 @@
 package DSA;
 
-public class ArrayList implements List{
+
+import PhoneBook.UserInfo;
+
+public class ArrayList implements List {
 
 
-    private int size;
-    private int arraySize;
-    private String[]  elements;
+private final String [] arraylist = new String[5];
+ boolean isEmpty = true;
 
-    public ArrayList(int arraySize){
-        this.arraySize = arraySize;
-        elements = new String[arraySize];
-    }
+int size;
     @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
     @Override
-    public void add(String item) {
-//        if(size == arraySize -1) {
-//            int previousSize = arraySize;
-//            arraySize *= 2;
-//            String[]newElements = new String[arraySize];
-//            System.arraycopy(elements, 0, newElements,0, previousSize);
-//            elements = newElements;
-//        }
-        elements[size] = item;
-        size++;
+    public void addItem(String item) {
+        arraylist[size++] = item;
     }
-
-    @Override
-    public void delete(String item) {
-//        for(int i = 0; i < size; i++) {
-//            if(Object.equals(item,elements[i])) {
-//                System.arraycopy(elements, i + i, elements, i, size -1);
-//
-//            }
-        for (int i = 0; i < size(); i++) {
-            if(elements[i].equalsIgnoreCase(item)){
-                elements[i] = null;
-                size--;
-                break;
-            }
-
-        }
-        }
-
 
     @Override
     public int size() {
         return size;
     }
-//    size --;
+
+    @Override
+    public void removeItem(String item) {
+    arraylist[size--] = item;
+    }
+
+    @Override
+    public String getIndex(int index) {
+        return arraylist[index];
+    }
+
+    @Override
+    public void add(UserInfo contactInfo) {
+
+    }
+
+    @Override
+    public void remove(UserInfo contactInfo) {
+
+    }
+
+    @Override
+    public UserInfo get(int index) {
+        return null;
+    }
+
+
 }
